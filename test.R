@@ -32,7 +32,7 @@ lungtest<- NormalizeData(lungtest, normalization.method = "LogNormalize", scale.
 #########################################    FindVariableFeatures  ######################################
 lungtest <- FindVariableFeatures(lungtest, selection.method = "vst", nfeatures = 2000)
 
-############################################ Dimention Reduction  #####################################################
+############################################ Dimension Reduction  #####################################################
 
 lungtest <- ScaleData(lungtest, verbose = FALSE)
 lungtest <- RunPCA(lungtest, npcs = 50, verbose = FALSE)
